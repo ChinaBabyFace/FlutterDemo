@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wjy_flutter_demo/mvvm/base_page.dart';
+import 'package:wjy_flutter_demo/mvvm/base_stateless_page.dart';
 
-class AboutUsPage extends BasePage {
+class AboutUsPage extends BaseStatelessPage {
   static const String ROUTE_PATH = 'home_page/about_us_page';
   final String title;
 

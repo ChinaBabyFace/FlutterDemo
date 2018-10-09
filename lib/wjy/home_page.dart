@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:wjy_flutter_demo/mvvm/base_page.dart';
+import 'package:wjy_flutter_demo/mvvm/base_stateless_page.dart';
 import 'package:wjy_flutter_demo/wjy/about_us_page.dart';
 
-class HomePage extends BasePage {
+class HomePage extends BaseStatelessPage {
   @override
   Widget getContentWidget(BuildContext context) {
     return Column(

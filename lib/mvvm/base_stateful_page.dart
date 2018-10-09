@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-abstract class BasePage extends StatelessWidget {
-  BasePage();
+abstract class BaseStatefulPage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState();
+}
 
+abstract class BasePageState<T extends StatefulWidget> extends State<T> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,9 +15,7 @@ abstract class BasePage extends StatelessWidget {
         body: getContentWidget(context));
   }
 
-  @protected
   String getTitle();
 
-  @protected
   Widget getContentWidget(BuildContext context);
 }
